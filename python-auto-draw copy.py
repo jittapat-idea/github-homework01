@@ -8,11 +8,12 @@ time.sleep(10)
 pyautogui.click()
 
 # can be varied according to convininence
-distance = 250
+distance = 300
 
 while distance > 0:
-    # right
-    pyautogui.dragRel(distance, 0, duration = 0.1)
+    
+    pyautogui.dragRel(-distance, 0, duration = 0.1)
+    
     
     distance -= 10
 
@@ -21,10 +22,10 @@ while distance > 0:
 
     
 
-    # left
-    pyautogui.dragRel(-distance, 0, duration = 0.1)
+    pyautogui.dragRel(distance, 0, duration = 0.1)
+    
 
-    distance -= 5
+    distance -= 0
     
     #down
     pyautogui.dragRel(0, distance, duration = 0.1)
